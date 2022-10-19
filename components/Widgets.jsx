@@ -16,7 +16,7 @@ const Widgets = ({ articles }) => {
 						<a
 							href={article.url}
 							target="_blank"
-							rel="noopener"
+							rel="noreferrer"
 							key={article.url}
 						>
 							<div className="flex space-x-2 items-center cursor-pointer hover:bg-gray-700 dark:hover:bg-gray-400 px-2.5 py-1">

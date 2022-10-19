@@ -85,7 +85,7 @@ const Header = () => {
 					<a
 						href="https://weavers-dashboard.netlify.app/"
 						target="_blank"
-						rel="noopener"
+						rel="noreferrer"
 					>
 						Weavers CPM
 					</a>
