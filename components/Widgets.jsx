@@ -13,7 +13,12 @@ const Widgets = ({ articles }) => {
 				</div>
 				<div className="space-y-1 ">
 					{articles.slice(0, 8).map((article) => (
-						<a href={article.url} target="_blank" key={article.url}>
+						<a
+							href={article.url}
+							target="_blank"
+							rel="noopener"
+							key={article.url}
+						>
 							<div className="flex space-x-2 items-center cursor-pointer hover:bg-gray-700 dark:hover:bg-gray-400 px-2.5 py-1">
 								<FiberManualRecordRoundedIcon className="!h-2 !w-2" />
 								<div className="hover:text-white dark:hover:text-black">
@@ -33,6 +38,7 @@ const Widgets = ({ articles }) => {
 			<div className="bg-gray-900 w-11/12 h-48 rounded-md sticky top-20 border border-gray-300 dark:border-none">
 				<Image
 					src="/images/ads.jpg"
+					alt=""
 					className="!w-full !h-full"
 					layout="fill"
 					objectFit="contain"

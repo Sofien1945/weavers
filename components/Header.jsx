@@ -30,12 +30,18 @@ const Header = () => {
 				{mounted && (
 					<>
 						{resolvedTheme === "dark" ? (
-							<Image src="/images/weavers_icon.png" width={60} height={60} />
+							<Image
+								src="/images/weavers_icon.png"
+								width={60}
+								height={60}
+								alt=""
+							/>
 						) : (
 							<Image
 								src="/images/logo-weavers-final-removebg-preview.png"
 								width={60}
 								height={60}
+								alt=""
 							/>
 						)}
 					</>
@@ -76,7 +82,11 @@ const Header = () => {
 					</div>
 				)}
 				<button className="cursor-pointer rounded  px-5 py-2 border border-amber-500 hover:bg-amber-500 text-gray-500 hover:text-white active:bg-amber-600">
-					<a href="https://weavers-dashboard.netlify.app/" target="_blank">
+					<a
+						href="https://weavers-dashboard.netlify.app/"
+						target="_blank"
+						rel="noopener"
+					>
 						Weavers CPM
 					</a>
 				</button>

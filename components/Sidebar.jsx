@@ -10,7 +10,7 @@ const Sidebar = () => {
 		<div className="space-y-2 ">
 			<div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden relative flex flex-col items-center text-center border border-gray-300 dark:border-none md:w-60">
 				<div className="relative w-full h-14">
-					<Image src="/images/link_back.png" layout="fill" priority />
+					<Image src="/images/link_back.png" layout="fill" priority alt="" />
 				</div>
 				<Avatar
 					onClick={signOut}

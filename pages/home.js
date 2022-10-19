@@ -24,6 +24,7 @@ const home = ({ providers }) => {
 							src="/images/logo-weavers-final-removebg-preview.png"
 							layout="fill"
 							objectFit="contain"
+							alt=""
 						/>
 					</div>
 					<h1 className="text-4xl text-black font-bold pl-2">Weavers</h1>
@@ -68,7 +69,12 @@ const home = ({ providers }) => {
 					</div>
 				</div>
 				<div className="relative xl:absolute w-80 h-80 xl:w-[380px] xl:h-[380px] top-[100px] right-5">
-					<Image src="/images/pattern_nextjs.png" layout="fill" priority />
+					<Image
+						src="/images/pattern_nextjs.png"
+						layout="fill"
+						priority
+						alt=""
+					/>
 				</div>
 			</main>
 			<footer className="font-normal flex items-center justify-center">
