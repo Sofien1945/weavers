@@ -1,7 +1,24 @@
 /** @type {import('next').NextConfig} */
+const intercept = require("intercept-stdout");
+
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+	swcMinify: true,
+	images: {
+		domains: ["rb.gy"],
+	},
+	pageExtensions: ["mdx", "md", "jsx", "js", "tsx", "ts"],
+};
+
+// safely ignore recoil warning messages in dev (triggered by HMR)
+function interceptStdout(text) {
+	if (text.includes("Duplicate atom key")) {
+		return "";
+	}
+	return text;
 }
 
-module.exports = nextConfig
+if (process.env.NODE_ENV === "development") {
+	intercept(interceptStdout);
+}
+
+module.exports = nextConfig;
