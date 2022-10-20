@@ -46,16 +46,16 @@ const Header = () => {
 						)}
 					</>
 				)}
-				<div className="flex items-center space-x-1 md:bg-gray-100 dark:md:bg-gray-700 py-2.5 px-4 rounded-md w-full">
+				<div className="flex items-center space-x-1 bg-none md:bg-gray-500 md:dark:bg-gray-200 py-2.5 px-4 rounded-md w-full text-black dark:text-white md:dark:text-black">
 					<SearchRoundedIcon />
 					<input
 						type="text"
 						placeholder="Search"
-						className="hidden md:inline-flex bg-transparent text-sm placeholder-black dark:placeholder-white/75 flex-grow p-1"
+						className="hidden md:inline-flex bg-transparent text-sm placeholder-white/75 dark:placeholder-gray-900 flex-grow p-1"
 					/>
 				</div>
 			</div>
-			<div className="flex items-center space-x-6">
+			<div className="flex items-center space-x-3 mx-4">
 				<HeaderLink Icon={HomeRoundedIcon} text="Home" feed active />
 				<HeaderLink Icon={GroupIcon} text="My Network" feed />
 				<HeaderLink Icon={BusinessCenterIcon} text="Jobs" feed hidden />
@@ -81,13 +81,13 @@ const Header = () => {
 						<span className="absolute right-0.5">🌞</span>
 					</div>
 				)}
-				<button className="cursor-pointer rounded  px-5 py-2 border border-amber-500 hover:bg-amber-500 text-gray-500 hover:text-white active:bg-amber-600">
+				<button className="cursor-pointer rounded  px-5 py-2 border border-amber-500 hover:bg-amber-500 text-gray-500 hover:text-white active:bg-amber-600 dark:text-white">
 					<a
 						href="https://weavers-dashboard.netlify.app/"
 						target="_blank"
 						rel="noreferrer"
 					>
-						Weavers CPM
+						CPM
 					</a>
 				</button>
 			</div>
