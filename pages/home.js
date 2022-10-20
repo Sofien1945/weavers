@@ -48,8 +48,8 @@ const home = ({ providers }) => {
 					))}
 				</div>
 			</header>
-			<main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto">
-				<div className="space-y-6 xl:space-y-10 space-x-10">
+			<main className="flex flex-col xl:flex-row items-center max-w-screen-lg space-y-4 px-2 md:mx-auto">
+				<div className="space-y-4 md:space-y-10 space-x-2 md:space-x-10">
 					<h1 className="text-3xl md:text-5xl text-amber-700/80 max-w-xl !leading-snug">
 						Welcome to the Construction Community
 					</h1>
@@ -68,7 +68,7 @@ const home = ({ providers }) => {
 						</div>
 					</div>
 				</div>
-				<div className="relative xl:absolute w-80 h-80 xl:w-[380px] xl:h-[380px] top-[100px] right-5">
+				<div className="relative xl:absolute w-80 h-80 xl:w-[380px] xl:h-[380px] xl:top-[100px] right-5">
 					<Image
 						src="/images/pattern_nextjs.png"
 						layout="fill"
@@ -77,8 +77,8 @@ const home = ({ providers }) => {
 					/>
 				</div>
 			</main>
-			<footer className="font-normal flex items-center justify-center">
-				Copyrights @weavers 2022
+			<footer className="flex flex-row items-center justify-center border-t p-2 md:p-5">
+				<h2>Copyrights @weavers 2022</h2>
 			</footer>
 		</div>
 	);
