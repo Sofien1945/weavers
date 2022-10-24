@@ -58,7 +58,7 @@ const home = ({ providers }) => {
 						<h1 className="py-4 text-3xl">Construction Social Network</h1>
 						<p className="py-4 text-xl">
 							Be part of new construction ecosystem pargigm where everyone
-							contribute to improve project performance and insure client's
+							contribute to improve project performance and insure client
 							satisfaction
 						</p>
 
