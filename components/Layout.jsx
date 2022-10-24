@@ -162,7 +162,7 @@ const Layout = ({ title, children, providers }) => {
 				</div>
 			</header>
 			<main className="flex flex-col w-full min-h-screen">{children}</main>
-			<footer className="flex flex-row items-center justify-center border-t p-2 md:p-5">
+			<footer className="flex flex-row items-center justify-center border-t p-2 md:p-5 h-10">
 				<h2>Copyrights @weavers 2022</h2>
 			</footer>
 		</div>

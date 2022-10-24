@@ -19,6 +19,7 @@ import FolderSharedRoundedIcon from "@mui/icons-material/FolderSharedRounded";
 import CreditScoreRoundedIcon from "@mui/icons-material/CreditScoreRounded";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import AboutCard from "../../components/AboutCard";
+import Quote from "../../components/Quote";
 
 const home = ({ providers }) => {
 	console.log(providers);
@@ -46,7 +47,7 @@ const home = ({ providers }) => {
 						<button className="px-5 py-2 rounded-full text-white m-2 bg-gradient-to-r from-amber-700 to-yellow-400 hover:bg-gradient-to-r hover:from-black hover:to-black/20">
 							Look for Professionnal
 						</button>
-						<button className="px-5 py-2 rounded-full text-white m-2 bg-gray-800 hover:bg-gradient-to-r hover:from-black hover:to-black/20">
+						<button className="px-5 py-2 rounded-full text-white m-2 bg-gray-800 hover:bg-black/40">
 							Place Tender
 						</button>
 					</div>
@@ -91,7 +92,7 @@ const home = ({ providers }) => {
 				</div>
 			</div>
 			<div className="w-full text-black">
-				<div className="max-w-[1240px] mx-auto px-4 py-16 md:flex items-center">
+				<div className="max-w-[1240px] mx-auto px-4 py-5 md:flex items-center">
 					<div>
 						<h1 className="font-bold text-2xl leading-10">
 							Close Monitoring Projects Progress.
@@ -103,9 +104,9 @@ const home = ({ providers }) => {
 							project KPIs.
 						</p>
 					</div>
-					<div className="flex justify-center w-full py-16">
+					<div className="flex justify-center w-full py-5">
 						<img
-							className="md:max-w-[512px] shadow-lg"
+							className="md:max-w-[512px] shadow-2xl rounded-lg"
 							src="/images/pattern_nextjs.png"
 							alt="/"
 						/>
@@ -198,6 +199,7 @@ const home = ({ providers }) => {
 				</div>
 				<div className="border-r-2 border-gray-500" />
 			</div>
+			<Quote />
 		</Layout>
 	);
 };
