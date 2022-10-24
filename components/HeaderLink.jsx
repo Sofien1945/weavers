@@ -17,7 +17,7 @@ const HeaderLink = ({ Icon, text, avatar, active, feed, hidden }) => {
 			}}
 		>
 			{avatar ? (
-				<Icon className="!h-7 !w-7 lg:!-mb-1 " src={session?.user?.image} />
+				<Icon className="!h-7 !w-7 lg:!-mb-1" src={session?.user?.image} />
 			) : (
 				<Icon src={session?.user?.image} />
 			)}
