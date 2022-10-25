@@ -76,16 +76,17 @@ const Layout = ({ title, children, providers }) => {
 							</a>
 						</Link>
 					</div>
-					{Object.values(providers).map((provider) => (
-						<div key={provider.name} className="p-2">
-							<button
-								className="cursor-pointer px-6 py-2 rounded-full text-white bg-gradient-to-r from-amber-700 to-yellow-400 hover:bg-gradient-to-r hover:from-black hover:to-black/20 active:bg-amber-600"
-								onClick={() => signIn(provider.id, { callbackUrl: "/" })}
-							>
-								Sign In
-							</button>
-						</div>
-					))}
+
+					<div className="p-2">
+						<Link passHref href="/auth/signin">
+							<a>
+								<button className="cursor-pointer px-6 py-2 rounded-full text-white bg-gradient-to-r from-amber-700 to-yellow-400 hover:bg-gradient-to-r hover:from-black hover:to-black/20 active:bg-amber-600">
+									Sign In
+								</button>
+							</a>
+						</Link>
+					</div>
+
 					{session && (
 						<Link href="/">
 							<a className="hover:underline text-gray-500 hover:text-amber-500 ml-4 pl-5">
@@ -136,16 +137,15 @@ const Layout = ({ title, children, providers }) => {
 							</Link>
 						</li>
 						<li>
-							{Object.values(providers).map((provider) => (
-								<div key={provider.name} className="pl-4">
-									<button
-										className="cursor-pointer rounded-full mt-8 px-8 py-2 bg-gradient-to-r from-amber-700 to-yellow-400 hover:from-blue-500 hover:to-green-200"
-										onClick={() => signIn(provider.id, { callbackUrl: "/" })}
-									>
-										Sign In
-									</button>
-								</div>
-							))}
+							<div className="p-2">
+								<Link passHref href="/auth/signin">
+									<a>
+										<button className="cursor-pointer px-6 py-2 rounded-full text-white bg-gradient-to-r from-amber-700 to-yellow-400 hover:bg-gradient-to-r hover:from-black hover:to-black/20 active:bg-amber-600">
+											Sign In
+										</button>
+									</a>
+								</Link>
+							</div>
 						</li>
 						<li>
 							{session && (

@@ -21,10 +21,11 @@ import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import AboutCard from "../../components/AboutCard";
 import Quote from "../../components/Quote";
 
-const home = ({ providers }) => {
-	console.log(providers);
+const home = (/* { providers } */) => {
+	//console.log(providers);
+	//providers={providers}
 	return (
-		<Layout title="Home" providers={providers}>
+		<Layout title="Home">
 			<div className="flex flex-col items-center justify-center md:flex-row w-full h-[80vh] top-[80px] space-y-10 drop-shadow-2xl">
 				<video
 					className="object-cover h-screen w-screen absolute -z-10 "
@@ -206,7 +207,7 @@ const home = ({ providers }) => {
 
 export default home;
 
-export async function getServerSideProps(context) {
+/* export async function getServerSideProps(context) {
 	const providers = await getProviders();
 	console.log(providers);
 	return {
@@ -214,4 +215,4 @@ export async function getServerSideProps(context) {
 			providers,
 		},
 	};
-}
+} */
