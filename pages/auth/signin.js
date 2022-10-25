@@ -1,6 +1,7 @@
 import { getProviders, signIn } from "next-auth/react";
 import GoogleIcon from "@mui/icons-material/Google";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import { Button } from "@mui/material";
 
 export default function SignIn({ providers }) {
@@ -15,7 +16,13 @@ export default function SignIn({ providers }) {
 							<Button
 								onClick={() => signIn(provider.id, { callbackUrl: "/" })}
 								startIcon={
-									provider.name === "Google" ? <GoogleIcon /> : <GitHubIcon />
+									provider.name === "Google" ? (
+										<GoogleIcon />
+									) : provider.name === "GitHub" ? (
+										<GitHubIcon />
+									) : (
+										<FacebookIcon />
+									)
 								}
 								variant="outlined"
 								color="info"
