@@ -11,7 +11,7 @@ export default function SignIn({ providers }) {
 		<div className="w-screen h-screen bg-gray-100 flex items-center justify-center">
 			<div className="flex flex-col w-4/5 min-h-fit text-white bg-gradient-to-tr from-black to-gray-500 shadow-2xl shadow-emerald-800 max-w-lg mx-auto rounded-lg items-center p-5 space-y-4">
 				<h1 className="font-bold underline mb-4">Sign In to WEAVERS</h1>
-				<img src="/images/nextauth.png" alt="auth" className="w-16 h-24" />
+				<img src="/images/nextauth.png" alt="auth" className="w-20 h-24" />
 				<div className="flex flex-col items-center justify-center w-full h-full space-y-4">
 					{Object.values(providers).map((provider) => (
 						<div key={provider.name} className="flex flex-col">
@@ -32,6 +32,8 @@ export default function SignIn({ providers }) {
 								}
 								variant="outlined"
 								color="info"
+								size="medium"
+								className="w-60"
 							>
 								Sign in with {provider.name}
 							</Button>
