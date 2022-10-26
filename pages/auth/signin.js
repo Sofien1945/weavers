@@ -21,11 +21,11 @@ export default function SignIn({ providers }) {
 									provider.name === "Facebook" ? (
 										<FacebookIcon />
 									) : provider.name === "Instagram" ? (
-										<InstagramIcon />
+										<InstagramIcon className="text-pink-500" />
 									) : provider.name === "Google" ? (
-										<GoogleIcon />
+										<GoogleIcon className="text-red-500" />
 									) : provider.name === "GitHub" ? (
-										<GitHubIcon />
+										<GitHubIcon className="text-black" />
 									) : (
 										<EmailIcon />
 									)
@@ -33,7 +33,7 @@ export default function SignIn({ providers }) {
 								variant="outlined"
 								color="info"
 								size="medium"
-								className="w-60"
+								className="w-60 bg-white capitalize"
 							>
 								Sign in with {provider.name}
 							</Button>
