@@ -31,7 +31,7 @@ export default function SignIn({ providers }) {
 									)
 								}
 								variant="outlined"
-								color="info"
+								//color="info"
 								size="medium"
 								className="w-60 bg-white capitalize"
 							>
