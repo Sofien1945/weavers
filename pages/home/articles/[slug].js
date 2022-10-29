@@ -16,11 +16,14 @@ import { getPosts, getPostDetails } from "../../../services";
 const PostDetails = ({ post }) => {
 	const router = useRouter();
 	const { slug } = router.query;
+
+	if (router.isFallback) {
+		return <Loader />;
+	}
 	//console.log(post);
 	return (
 		<Layout title={`Article: ${slug}`}>
-			<h1>{slug}</h1>
-			{/*<div className="container mx-auto px-10 mb-8">
+			<div className="container mx-auto px-10 mb-8">
 				<div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
 					<div className="col-span-1 lg:col-span-8">
 						<PostDetail post={post} />
@@ -36,7 +39,7 @@ const PostDetails = ({ post }) => {
 						</div>
 					</div>
 				</div>
-			</div>*/}
+			</div>
 		</Layout>
 	);
 };
