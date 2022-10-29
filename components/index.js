@@ -11,6 +11,8 @@ import PostWidget from "./PostWidget";
 import Loader from "./Loader";
 import PostDetail from "./PostDetail";
 import Author from "./Author";
+import Comments from "./Comments";
+import CommentsForm from "./CommentsForm";
 export {
 	Layout,
 	Header,
@@ -25,4 +27,6 @@ export {
 	Loader,
 	PostDetail,
 	Author,
+	Comments,
+	CommentsForm,
 };
