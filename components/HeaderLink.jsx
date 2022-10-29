@@ -1,17 +1,16 @@
 import { useSession, signOut } from "next-auth/react";
-import { userAgent } from "next/server";
 
 const HeaderLink = ({ Icon, text, avatar, active, feed, hidden }) => {
 	const { data: session } = useSession();
 	return (
 		<div
-			className={`${
+			className={`cursor-pointer flex flex-col justify-center items-center hover:text-amber-500 dark:hover:text-amber-500 ${
 				hidden && "hidden md:inline-flex"
-			} cursor-pointer flex flex-col justify-center items-center hover:text-amber-500 dark:hover:text-amber-500 ${
+			} ${
 				feed
 					? "text-black/60 dark:text-white lg:mb-1.5 space-y-1"
 					: "text-gray-500 dark:text-gray-700 "
-			} ${active && "!text-black dark:!text-white"}`}
+			} ${active && "!text-amber-500"}`}
 			onClick={() => {
 				avatar && signOut();
 			}}

@@ -1,22 +1,11 @@
 import Layout from "../../components/Layout";
-import { getProviders, signIn } from "next-auth/react";
 
-const discover = ({ providers }) => {
+const discover = () => {
 	return (
-		<Layout title="Discover" providers={providers}>
+		<Layout title="Discover">
 			<h1 className="text-black">discover page</h1>
 		</Layout>
 	);
 };
 
 export default discover;
-
-export async function getServerSideProps(context) {
-	const providers = await getProviders();
-	console.log(providers);
-	return {
-		props: {
-			providers,
-		},
-	};
-}

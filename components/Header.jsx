@@ -81,7 +81,7 @@ const Header = () => {
 						<span className="absolute right-0.5">🌞</span>
 					</div>
 				)}
-				<button className="cursor-pointer rounded  px-5 py-2 border border-amber-500 hover:bg-amber-500 text-gray-500 hover:text-white active:bg-amber-600 dark:text-white">
+				<button className="cursor-pointer px-6 py-1 rounded-full text-white bg-gradient-to-r from-amber-700 to-yellow-400 hover:bg-gradient-to-r hover:from-black hover:to-black/20 active:bg-amber-600">
 					<a
 						href="https://weavers-dashboard.netlify.app/"
 						target="_blank"

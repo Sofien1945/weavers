@@ -13,6 +13,7 @@ import { getProviders, signIn } from "next-auth/react";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import Head from "next/head";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 
 const Layout = ({ title, children, providers }) => {
 	const { data: session } = useSession();
@@ -72,7 +73,16 @@ const Layout = ({ title, children, providers }) => {
 						</Link>
 						<Link href="/home/offers">
 							<a>
-								<HeaderLink Icon={BusinessCenterIcon} text="offers" />
+								<HeaderLink
+									Icon={BusinessCenterIcon}
+									text="offers"
+									active={false}
+								/>
+							</a>
+						</Link>
+						<Link href="/home/articles">
+							<a>
+								<HeaderLink Icon={AutoStoriesIcon} text="Articles" />
 							</a>
 						</Link>
 					</div>

@@ -8,9 +8,9 @@ const Sidebar = () => {
 	const { data: session } = useSession();
 	return (
 		<div className="space-y-2 ">
-			<div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden relative flex flex-col items-center text-center border border-gray-300 dark:border-none md:w-60">
+			<div className="bg-white dark:bg-gray-900 overflow-hidden relative flex flex-col items-center text-center border border-gray-300 dark:border-none md:w-60">
 				<div className="relative w-full h-14">
-					<Image src="/images/link_back.png" layout="fill" priority alt="" />
+					<Image src="/images/futureart.jpg" layout="fill" priority alt="" />
 				</div>
 				<Avatar
 					onClick={signOut}
@@ -43,17 +43,24 @@ const Sidebar = () => {
 							Explore New Paradigm
 						</h4>
 					</div>
-					<div className="sidebarButton flex items-center space-x-1.5">
-						<BookmarkOutlinedIcon />
-						<h4 className="dark:text-white font-medium">My Items</h4>
-					</div>
 				</div>
 			</div>
-			<div className="hidden md:flex bg-white dark:bg-gray-900 text-black/70 dark:text-white/75 rounded-lg overflow-hidden flex-col space-y-2 pt-2.5 sticky top-20 border border-gray-300 dark:border-none">
-				<p className="sidebarLink">Groups</p>
+			<div className="hidden md:flex bg-white dark:bg-gray-900 text-black/70 dark:text-white/75 overflow-hidden flex-col space-y-2 p-2.5 sticky top-20 border border-gray-300 dark:border-none">
+				<div className="border-b border-gray-300 py-3 px-4 opacity-80 flex items-center space-x-1.5">
+					<BookmarkOutlinedIcon />
+					<h4 className="dark:text-white font-medium">Premium Services</h4>
+				</div>
+				<div className="space-y-2">
+					<p className="sidebarLink">Digital Card</p>
+					<p className="sidebarLink">Branding</p>
+					<p className="sidebarLink">Profiling</p>
+				</div>
+			</div>
+			<div className="hidden md:flex bg-white dark:bg-gray-900 text-black/70 dark:text-white/75 overflow-hidden flex-col space-y-2 p-2.5 sticky top-64 border border-gray-300 dark:border-none">
+				<p className="sidebarLink">Community</p>
 				<div className="flex items-center justify-between">
 					<p className="sidebarLink">Events</p>
-					<AddRoundedIcon className="!h-5" />
+					<AddRoundedIcon className="!h-5 border rounded-full border-gray-500 bg-gray-500 hover:bg-amber-500 text-white" />
 				</div>
 				<p className="sidebarLink">Followed Hashtags</p>
 				<div className="sidebarButton text-center">
