@@ -146,6 +146,14 @@ const Layout = ({ title, children, providers }) => {
 								</a>
 							</Link>
 						</li>
+						<li className="text-2xl flex items-center justify-center">
+							<Link href="/home/articles">
+								<a className="flex items-end active:text-amber-500">
+									<AutoStoriesIcon fontSize="large" />
+									<span className="pl-2">Articles</span>
+								</a>
+							</Link>
+						</li>
 						<li>
 							<div className="p-2">
 								<Link passHref href="/auth/signin">
