@@ -3,7 +3,7 @@ import Image from "next/image";
 const grpahCMSImageLoader = ({ src }) => src;
 
 const Author = ({ author }) => (
-	<div className="text-center mt-20 mb-8 p-12 relative rounded-lg bg-black/20">
+	<div className="text-center mt-20 mb-8 p-12 relative rounded-lg bg-black/40">
 		<div className="absolute left-0 right-0 -top-10">
 			<div className="bg-white rounded-full inline-block p-2 border-2">
 				<Image

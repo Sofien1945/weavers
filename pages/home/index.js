@@ -19,7 +19,7 @@ import FolderSharedRoundedIcon from "@mui/icons-material/FolderSharedRounded";
 import CreditScoreRoundedIcon from "@mui/icons-material/CreditScoreRounded";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import AboutCard from "../../components/AboutCard";
-import Quote from "../../components/Quote";
+import { Quote, FeaturedPosts } from "../../components";
 
 const home = (/* { providers } */) => {
 	//console.log(providers);
@@ -115,7 +115,7 @@ const home = (/* { providers } */) => {
 				</div>
 			</div>
 			<div className="px-10 text-2xl flex items-center justify-center ">
-				<h2 className="font-bold underline">Our Stories</h2>
+				<h2 className="font-bold underline">Our Mission</h2>
 			</div>
 			<div className="max-w-screen py-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-white space-x-2 space-y-8 h-full items-center">
 				{/*     <!--Card 1--> */}
@@ -200,6 +200,10 @@ const home = (/* { providers } */) => {
 				</div>
 				<div className="border-r-2 border-gray-500" />
 			</div>
+			<div className="px-10 text-2xl flex items-center justify-center ">
+				<h2 className="font-bold underline">Our Mission</h2>
+			</div>
+			<FeaturedPosts />
 			<Quote />
 		</Layout>
 	);

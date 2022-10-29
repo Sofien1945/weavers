@@ -13,6 +13,8 @@ import PostDetail from "./PostDetail";
 import Author from "./Author";
 import Comments from "./Comments";
 import CommentsForm from "./CommentsForm";
+import FeaturedPosts from "./FeaturedPosts";
+import Quote from "./Quote";
 export {
 	Layout,
 	Header,
@@ -29,4 +31,6 @@ export {
 	Author,
 	Comments,
 	CommentsForm,
+	FeaturedPosts,
+	Quote,
 };
