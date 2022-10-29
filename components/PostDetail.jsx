@@ -1,6 +1,14 @@
 import React from "react";
 import moment from "moment";
+import { useRouter } from "next/router";
+
 const PostDetail = ({ post }) => {
+	const router = useRouter();
+
+	if (router.isFallback) {
+		return <Loader />;
+	}
+
 	return (
 		<div className="bg-white shadow-lg rounded-lg md:p-8 pb-12 mb-8 mt-5">
 			<div className="relative overflow-hidden shadow-md mb-6">
