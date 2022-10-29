@@ -27,9 +27,9 @@ const Quote = () => {
 	}, [index]);
 
 	return (
-		<section className="flex flex-col max-w-screen px-4">
+		<section className="flex flex-col max-w-screen px-4 text-gray-900">
 			<div className="flex justify-center pb-5">
-				<h2 className="text-2xl font-semibold underline">
+				<h2 className="text-2xl font-semibold underline ">
 					<span>Founders</span>
 				</h2>
 			</div>

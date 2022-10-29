@@ -55,7 +55,7 @@ const home = (/* { providers } */) => {
 			</div>
 			<div className="w-full text-black text-center pt-16">
 				<div className="max-w-[1240px] mx-auto px-4 py-16 ">
-					<div>
+					<div className="text-gray-900">
 						<h1 className="py-4 text-3xl">Construction Social Network</h1>
 						<p className="py-4 text-xl">
 							Be part of new construction ecosystem pargigm where everyone
@@ -93,7 +93,7 @@ const home = (/* { providers } */) => {
 			</div>
 			<div className="w-full text-black">
 				<div className="max-w-[1240px] mx-auto px-4 py-5 md:flex items-center">
-					<div>
+					<div className="text-gray-900">
 						<h1 className="font-bold text-2xl leading-10">
 							Close Monitoring Projects Progress.
 						</h1>
@@ -114,9 +114,9 @@ const home = (/* { providers } */) => {
 				</div>
 			</div>
 			<div className="px-10 text-2xl flex items-center justify-center ">
-				<h2 className="font-bold underline">Our Mission</h2>
+				<h2 className="text-gray-900 font-bold underline">Our Mission</h2>
 			</div>
-			<div className="max-w-screen p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-white space-x-2 space-y-8 h-full items-center">
+			<div className="max-w-screen p-4 grid grid-cols-1 md:grid-cols-4 gap-36 md:gap-12 h-full items-center justify-center mb-24">
 				{/*     <!--Card 1--> */}
 				<ServiceCard
 					srcImage="/images/ecofriendly.jpg"
@@ -162,7 +162,7 @@ const home = (/* { providers } */) => {
 			</div>
 			<div className="flex flex-col md:flex-row justify-around p-5 space-y-6">
 				<div className="border-l-2 border-gray-500" />
-				<div className="flex flex-col">
+				<div className="flex flex-col text-gray-900">
 					<h2 className="font-semibold leading-10">
 						Realtime Project Managment{" "}
 					</h2>
@@ -174,7 +174,7 @@ const home = (/* { providers } */) => {
 				</div>
 				<div className="border border-l-2 border-dashed border-gray-500" />
 
-				<div className="grid grid-cols-2 gap-10">
+				<div className="grid grid-cols-2 gap-10 text-gray-900">
 					<div className="p-5 shadow-lg rounded-lg space-x-5 ">
 						<ShareRoundedIcon
 							className="text-amber-500 rounded-full"
@@ -200,7 +200,7 @@ const home = (/* { providers } */) => {
 				<div className="border-r-2 border-gray-500" />
 			</div>
 			<div className="px-10 text-2xl flex items-center justify-center ">
-				<h2 className="font-bold underline">Our Mission</h2>
+				<h2 className="text-gray-900 font-bold underline">Our Stories</h2>
 			</div>
 			<FeaturedPosts />
 			<Quote />
