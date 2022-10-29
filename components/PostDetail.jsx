@@ -1,6 +1,7 @@
 import React from "react";
 import moment from "moment";
 import { useRouter } from "next/router";
+import Loader from "./Loader";
 
 const PostDetail = ({ post }) => {
 	const router = useRouter();
