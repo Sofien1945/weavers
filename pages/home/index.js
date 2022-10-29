@@ -13,13 +13,12 @@ import { getProviders, signIn } from "next-auth/react";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import Layout from "../../components/Layout";
-import ServiceCard from "../../components/ServiceCard";
 import ShareRoundedIcon from "@mui/icons-material/ShareRounded";
 import FolderSharedRoundedIcon from "@mui/icons-material/FolderSharedRounded";
 import CreditScoreRoundedIcon from "@mui/icons-material/CreditScoreRounded";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import AboutCard from "../../components/AboutCard";
-import { Quote, FeaturedPosts } from "../../components";
+import { ServiceCard, Quote, FeaturedPosts } from "../../components";
 
 const home = (/* { providers } */) => {
 	//console.log(providers);
@@ -117,7 +116,7 @@ const home = (/* { providers } */) => {
 			<div className="px-10 text-2xl flex items-center justify-center ">
 				<h2 className="font-bold underline">Our Mission</h2>
 			</div>
-			<div className="max-w-screen py-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-white space-x-2 space-y-8 h-full items-center">
+			<div className="max-w-screen p-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 text-white space-x-2 space-y-8 h-full items-center">
 				{/*     <!--Card 1--> */}
 				<ServiceCard
 					srcImage="/images/ecofriendly.jpg"

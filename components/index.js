@@ -15,6 +15,7 @@ import Comments from "./Comments";
 import CommentsForm from "./CommentsForm";
 import FeaturedPosts from "./FeaturedPosts";
 import Quote from "./Quote";
+import ServiceCard from "./ServiceCard";
 export {
 	Layout,
 	Header,
@@ -33,4 +34,5 @@ export {
 	CommentsForm,
 	FeaturedPosts,
 	Quote,
+	ServiceCard,
 };
