@@ -43,10 +43,14 @@ const home = (/* { providers } */) => {
 						project monitoring process and to bring all the ecosystem in one
 						specialised social network{" "}
 					</p>
-					<div>
-						<button className="px-5 py-2 rounded-full text-white m-2 bg-gradient-to-r from-amber-700 to-yellow-400 hover:bg-gradient-to-r hover:from-black hover:to-black/20">
-							Look for Professionnal
-						</button>
+					<div className="flex flex-col sm:flex-row">
+						<div className="relative group">
+							<div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-600 to-purple-500 rounded-full blur opacity-80 group-hover:opacity-100 transition duration-500" />
+							<button className="relative px-5 py-2 rounded-full text-white m-2 bg-gradient-to-r from-amber-700 to-yellow-400 group-hover:bg-gradient-to-r group-hover:from-black group-hover:to-black/20">
+								Look for Professionnal
+							</button>
+						</div>
+
 						<button className="px-5 py-2 rounded-full text-white m-2 bg-gray-800 hover:bg-black/40">
 							Place Tender
 						</button>
